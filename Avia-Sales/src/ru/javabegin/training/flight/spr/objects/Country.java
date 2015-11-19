@@ -8,6 +8,15 @@ public class Country
     private String desc;
     private byte[] flag;
     private String shortName;
+    private String code;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
     public long getId() {
         return id;

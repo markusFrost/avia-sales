@@ -16,6 +16,7 @@ public class CityDB
     private static final String ID = "id";
     private static final String CODE = "code";
     private static final String DESC = "desc";
+    private static final String COUNTRY_ID = "country_id";
 
     private CityDB(){}
 
@@ -77,8 +78,7 @@ public class CityDB
 
                 city.setId( rs.getLong( ID ) );
                 city.setCode( rs.getString(CODE) );
-                //set country
-                //Todo set country
+                city.setCountry( CountryDB.getCountry( rs.getLong( COUNTRY_ID ) ) );
                 city.setDesc( rs.getString(DESC) );
                 city.setName( rs.getString( NAME ) );
             }
