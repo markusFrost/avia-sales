@@ -6,7 +6,7 @@ public class City
     private long id;
     private String name;
     private String desc;
-    private String postCode;
+    private String code;
     private Country country;
 
     public long getId() {
@@ -33,12 +33,12 @@ public class City
         this.desc = desc;
     }
 
-    public String getPostCode() {
-        return postCode;
+    public String getCode() {
+        return code;
     }
 
-    public void setPostCode(String postCode) {
-        this.postCode = postCode;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public Country getCountry() {
