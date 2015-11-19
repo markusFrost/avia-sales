@@ -38,6 +38,7 @@ public class AviaDB
     {
         try
         {
+            // Do not forget to include lib mysql.jar!!!!!!!!!!!!
             if ( conn == null || conn.isClosed() )
             {
                 //Register JDBC driver

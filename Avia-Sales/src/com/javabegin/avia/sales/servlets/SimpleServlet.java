@@ -21,7 +21,7 @@ public class SimpleServlet extends HttpServlet {
         response.setContentType("text/html; charset=windows-1251");
         //response.getWriter().write("Привет!");
 
-        City c = CityDB.getInstance().getCity( 2 );
+        City c = CityDB.getInstance().getCity( 1 );
 
        String val =  c.getName();
         response.getWriter().write( val );
