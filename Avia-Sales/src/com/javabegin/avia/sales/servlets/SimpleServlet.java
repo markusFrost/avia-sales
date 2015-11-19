@@ -1,5 +1,8 @@
 package com.javabegin.avia.sales.servlets;
 
+import ru.javabegin.training.flight.databases.CityDB;
+import ru.javabegin.training.flight.spr.objects.City;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,6 +19,11 @@ public class SimpleServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=windows-1251");
-        response.getWriter().write("Привет!");
+        //response.getWriter().write("Привет!");
+
+        City c = CityDB.getInstance().getCity( 2 );
+
+       String val =  c.getName();
+        response.getWriter().write( val );
     }
 }

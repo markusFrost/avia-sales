@@ -4,6 +4,7 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -27,24 +28,32 @@ public class AviaDB
         return instance;
     }
 
-    public Connection getConnection()
+    private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+    private static final String DB_URL = "jdbc:mysql://localhost/";
+    private static final String DB_NAME = "avia";
+    static final String USER = "admin";
+    static final String PASS = "123456";
+
+    public  Connection getConnection()
     {
         try
         {
-               if ( conn == null || conn.isClosed() )
-               {
-                   ic = new InitialContext();
-                   ds = (DataSource) ic.lookup("java:comp/env/jdbc/Avia");
-                   conn = ds.getConnection();
-               }
-        } catch (SQLException ex) {
-            Logger.getLogger(AviaDB.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (NamingException ex) {
-            Logger.getLogger(AviaDB.class.getName()).log(Level.SEVERE, null, ex);
+            if ( conn == null || conn.isClosed() )
+            {
+                //Register JDBC driver
+                Class.forName( JDBC_DRIVER );
+                conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
+            }
+        } catch (ClassNotFoundException e)
+        {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (SQLException e)
+        {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
-
         return conn;
     }
+
 
     public void closeConnection()
     {
