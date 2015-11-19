@@ -2,13 +2,6 @@ package ru.javabegin.training.flight.spr.objects;
 
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Андрей
- * Date: 19.11.15
- * Time: 20:11
- * To change this template use File | Settings | File Templates.
- */
 public class Aircraft
 {
     private long id;
@@ -17,4 +10,43 @@ public class Aircraft
     private List<Place> placeList;
     private Company company;
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public List<Place> getPlaceList() {
+        return placeList;
+    }
+
+    public void setPlaceList(List<Place> placeList) {
+        this.placeList = placeList;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 }

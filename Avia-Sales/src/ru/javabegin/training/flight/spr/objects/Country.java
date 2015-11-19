@@ -1,12 +1,6 @@
 package ru.javabegin.training.flight.spr.objects;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Андрей
- * Date: 19.11.15
- * Time: 20:16
- * To change this template use File | Settings | File Templates.
- */
+
 public class Country
 {
     private long id;
@@ -14,4 +8,44 @@ public class Country
     private String desc;
     private byte[] flag;
     private String shortName;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public byte[] getFlag() {
+        return flag;
+    }
+
+    public void setFlag(byte[] flag) {
+        this.flag = flag;
+    }
+
+    public String getShortName() {
+        return shortName;
+    }
+
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
+    }
 }

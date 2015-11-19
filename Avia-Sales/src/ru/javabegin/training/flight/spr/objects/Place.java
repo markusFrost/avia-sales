@@ -1,16 +1,41 @@
 package ru.javabegin.training.flight.spr.objects;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Андрей
- * Date: 19.11.15
- * Time: 20:18
- * To change this template use File | Settings | File Templates.
- */
 public class Place
 {
     private long id;
     private char row;
     private int seat;
     private FlightClass flightClass;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public char getRow() {
+        return row;
+    }
+
+    public void setRow(char row) {
+        this.row = row;
+    }
+
+    public int getSeat() {
+        return seat;
+    }
+
+    public void setSeat(int seat) {
+        this.seat = seat;
+    }
+
+    public FlightClass getFlightClass() {
+        return flightClass;
+    }
+
+    public void setFlightClass(FlightClass flightClass) {
+        this.flightClass = flightClass;
+    }
 }
