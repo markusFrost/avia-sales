@@ -28,6 +28,7 @@
     <file path="/Main.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447960214646" ignored="false" />
     <file path="/fragment.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447960372056" ignored="false" />
     <file path="/AircraftDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448016829436" ignored="false" />
+    <file path="/PlaceDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448018863989" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +88,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AircraftDB.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java">
+      <file leaf-file-name="PlaceDB.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="52" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.3043478">
+            <state line="33" column="36" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.9409158">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Passenger.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Aircraft.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Company.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/FlightClass.java" />
@@ -132,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AviaDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/CityDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java" />
+        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java" />
       </list>
     </option>
   </component>
@@ -600,13 +601,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Aircraft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.08695652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Passenger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.057971016" />
@@ -694,6 +688,15 @@
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="52" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.3043478">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="36" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.9409158">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
