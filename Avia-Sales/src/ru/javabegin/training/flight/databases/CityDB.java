@@ -62,8 +62,7 @@ public class CityDB
         return null;
     }
 
-    private City getCity ( PreparedStatement stmt )
-    {
+    private City getCity ( PreparedStatement stmt ) throws SQLException {
         City city = null;
         ResultSet rs = null;
 
@@ -85,6 +84,10 @@ public class CityDB
         } catch (SQLException e)
         {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        finally
+        {
+            rs.close();
         }
 
            return city;
