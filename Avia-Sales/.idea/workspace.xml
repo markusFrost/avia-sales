@@ -4,14 +4,14 @@
     <list default="true" id="0beb034c-d626-46af-921b-bb1bab0b0a7e" name="Default" comment="" />
     <ignored path="AviaSales.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448015618904" ignored="false" />
+    <file path="/Dummy.txt" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448626481470" ignored="false" />
     <file path="/index.jsp" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447943266686" ignored="false" />
     <file path="/web.xml" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447943592905" ignored="false" />
     <file path="/SimpleServlet.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447960710880" ignored="false" />
     <file path="/Aircraft.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950005515" ignored="false" />
     <file path="/City.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447955041231" ignored="false" />
     <file path="/Country.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447958379456" ignored="false" />
-    <file path="/Place.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447949949386" ignored="false" />
+    <file path="/Place.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627216779" ignored="false" />
     <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950213148" ignored="false" />
     <file path="/Flight.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950682343" ignored="false" />
     <file path="/Passenger.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950905411" ignored="false" />
@@ -28,7 +28,13 @@
     <file path="/Main.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447960214646" ignored="false" />
     <file path="/fragment.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447960372056" ignored="false" />
     <file path="/AircraftDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448016829436" ignored="false" />
-    <file path="/PlaceDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448018863989" ignored="false" />
+    <file path="/PlaceDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448628812597" ignored="false" />
+    <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/funcspecs/fs-jdbc-realm.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
+    <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/realm-howto.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
+    <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/funcspecs/fs-admin-objects.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
+    <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/jndi-resources-howto.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
+    <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/config/realm.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
+    <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/jndi-datasource-examples-howto.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +49,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -79,6 +83,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -91,10 +97,20 @@
       <file leaf-file-name="PlaceDB.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="36" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.9409158">
+            <state line="78" column="5" selection-start="2095" selection-end="2095" vertical-scroll-proportion="-0.03397341">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2229#2236#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Place.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Place.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="20" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Aircraft.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Company.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/FlightClass.java" />
-        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Place.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/interfaces/Buy.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/interfaces/Search.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/interfaces/Check.java" />
@@ -132,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AviaDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/CityDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java" />
+        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Place.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java" />
       </list>
     </option>
@@ -180,8 +196,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,6 +274,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,6 +533,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -535,7 +552,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -616,11 +632,6 @@
         <state line="8" column="25" selection-start="175" selection-end="175" vertical-scroll-proportion="0.23188406" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Place.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="8" selection-end="36" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Reservation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.20289855" />
@@ -694,11 +705,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Place.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="36" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.9409158">
+        <state line="78" column="5" selection-start="2095" selection-end="2095" vertical-scroll-proportion="-0.03397341">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2229#2236#0" expanded="true" />
           </folding>
         </state>
       </provider>

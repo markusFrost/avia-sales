@@ -26,12 +26,12 @@ DROP TABLE IF EXISTS `spr_place`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `spr_place` (
   `id` bigint(20) NOT NULL,
-  `row` char(1) NOT NULL,
-  `seat` int(100) NOT NULL,
+  `seatLetter` char(1) NOT NULL,
+  `seatNumber` int(100) NOT NULL,
   `flight_class_id` bigint(20) NOT NULL COMMENT 'Какому классу принадлежит это место Эконом или бизнес класс',
   PRIMARY KEY (`id`),
   UNIQUE KEY `idspr_place_UNIQUE` (`id`),
-  UNIQUE KEY `index_uniq1` (`row`,`seat`),
+  UNIQUE KEY `index_uniq1` (`seatLetter`,`seatNumber`),
   KEY `fk_flight_class_idx` (`flight_class_id`),
   CONSTRAINT `fk_flight_class` FOREIGN KEY (`flight_class_id`) REFERENCES `spr_flight_class` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Справочник мест';
