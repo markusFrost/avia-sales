@@ -36,6 +36,7 @@
     <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/config/realm.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
     <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/jndi-datasource-examples-howto.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
     <file path="/FlightClassDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448643070140" ignored="false" />
+    <file path="/CompanyDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448643831663" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,22 +96,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PlaceDB.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java">
+      <file leaf-file-name="CompanyDB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/CompanyDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="98" selection-start="4965" selection-end="4965" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2709#2716#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlightClassDB.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightClassDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="246" selection-end="259" vertical-scroll-proportion="0.24637681">
+            <state line="33" column="51" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,11 +107,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Place.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Place.java">
+      <file leaf-file-name="AircraftDB.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="20" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="63" column="12" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.3043478">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Company.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/FlightClass.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/interfaces/Buy.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/interfaces/Search.java" />
@@ -160,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Place.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightClassDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java" />
+        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/CompanyDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java" />
       </list>
     </option>
@@ -629,11 +620,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="171" selection-end="171" vertical-scroll-proportion="0.23188406" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/FlightClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="25" selection-start="175" selection-end="175" vertical-scroll-proportion="0.23188406" />
@@ -710,18 +696,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="20" selection-start="1469" selection-end="1469" vertical-scroll-proportion="1.115942">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="98" selection-start="4965" selection-end="4965" vertical-scroll-proportion="0.0">
+        <state line="189" column="98" selection-start="4965" selection-end="4965" vertical-scroll-proportion="0.37961596">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2709#2716#0" expanded="true" />
@@ -731,7 +708,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightClassDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="246" selection-end="259" vertical-scroll-proportion="0.24637681">
+        <state line="10" column="26" selection-start="246" selection-end="259" vertical-scroll-proportion="0.028985508">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/CompanyDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="51" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="12" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.3043478">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
