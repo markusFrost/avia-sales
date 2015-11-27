@@ -30,12 +30,24 @@ public class PlaceDB
     private static final String FLIGHT_CLASS_ID = "flight_class_id";
 
 
+    // -------------Block get Placces by AirCraft ID  ---------------------------
+
+    // -------------Block get Placces by AirCraft ID  ---------------------------
 
 
-
-
-
-
+    public ArrayList<Place> getPlacesByAirCraft  (long aircraft_id)
+    {
+        try
+        {
+           return getPlaces( getPlaceStmtByAirCraft(aircraft_id));
+        }
+        catch (Exception e){}
+        finally
+        {
+             AviaDB.getInstance().closeConnection();
+        }
+        return null;
+    }
 
 
     private PreparedStatement getPlaceStmtByAirCraft( long aircraft_id ) throws SQLException
@@ -105,30 +117,6 @@ public class PlaceDB
 
 
     // -------------Block get Placces by FlightClass ID  ---------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
