@@ -60,8 +60,8 @@ public class AircraftDB
             aircraft.setId(rs.getLong( ID ) );
             aircraft.setDesc(rs.getString( DESC ) );
             aircraft.setName(rs.getString( NAME ) );
-           // aircraft.setPlaceList(PlaceDB.getInstance().getPlacesByAircraft(rs.getLong( ID ) ) );
-           //    aircraft.setCompany(CompanyDB.getInstance().getCompany(rs.getInt( COMPANY_ID ) ) );
+            aircraft.setPlaceList(PlaceDB.getInstance().getPlacesByAirCraft(rs.getLong( ID ) ) );
+             // aircraft.setCompany(CompanyDB.getInstance().getCompany(rs.getInt( COMPANY_ID ) ) );
         }
         }catch ( Exception e  ) {}
         finally

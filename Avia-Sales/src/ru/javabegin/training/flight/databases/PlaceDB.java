@@ -187,7 +187,7 @@ public class PlaceDB
         place.setId( rs.getLong(ID));
         place.setSeatLetter(rs.getString(SEAT_LETTER).charAt(0));
         place.setSeatNumber(rs.getInt(SEAT_NUMBER));
-//        place.setFlightClass();
+       place.setFlightClass( FlightClassDB.getInstance().getFlightClass(rs.getLong(FLIGHT_CLASS_ID)));
 
         return  place;
     }
