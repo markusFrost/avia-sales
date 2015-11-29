@@ -31,8 +31,9 @@ public class CompanyDB
         catch ( Exception e ){}
         finally
         {
-            AviaDB.getInstance().closeConnection();
+
         }
+        AviaDB.getInstance().closeConnection();
         return null;
     }
 
@@ -64,7 +65,6 @@ public class CompanyDB
         }
 
         return company;
-
     }
 
     private PreparedStatement getCompanyStmt( long id ) throws SQLException

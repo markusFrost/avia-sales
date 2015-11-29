@@ -2,6 +2,7 @@ package ru.javabegin.training.flight.databases;
 
 
 import ru.javabegin.training.flight.spr.objects.Aircraft;
+import ru.javabegin.training.flight.spr.objects.Company;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -60,13 +61,27 @@ public class AircraftDB
             aircraft.setId(rs.getLong( ID ) );
             aircraft.setDesc(rs.getString( DESC ) );
             aircraft.setName(rs.getString( NAME ) );
-            aircraft.setPlaceList(PlaceDB.getInstance().getPlacesByAirCraft(rs.getLong( ID ) ) );
-            aircraft.setCompany(CompanyDB.getInstance().getCompany(rs.getInt( COMPANY_ID ) ) );
+
+            aircraft.setPlaceList(PlaceDB.getInstance().getPlacesByAircraft(rs.getLong(ID)) );
+
+           long  company_id =  rs.getLong( "company_id" );
+            Company company = CompanyDB.getInstance().getCompany(company_id) ;
+
+           // Company company = new Company();
+            //company.setName("LOLO");
+
+            aircraft.setCompany( company );
         }
-        }catch ( Exception e  ) {}
+        }catch ( Exception e  )
+        {
+            String val = e.getMessage().toString();
+        }
         finally
         {
-            rs.close();
+            if ( rs != null )
+            {
+                rs.close();
+            }
         }
 
         return aircraft;
