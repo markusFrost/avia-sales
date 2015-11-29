@@ -31,7 +31,7 @@ public class PlaceDB
         } catch (SQLException ex) {
             Logger.getLogger(PlaceDB.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
-            AviaDB.getInstance().closeConnection();
+          //  AviaDB.getInstance().closeConnection();
         }
         return null;
     }
@@ -43,7 +43,7 @@ public class PlaceDB
         } catch (SQLException ex) {
             Logger.getLogger(PlaceDB.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
-            AviaDB.getInstance().closeConnection();
+           // AviaDB.getInstance().closeConnection();
         }
         return null;
     }
@@ -58,7 +58,7 @@ public class PlaceDB
         {
             //AviaDB.getInstance().closeConnection();
         }
-        AviaDB.getInstance().closeConnection();
+       // AviaDB.getInstance().closeConnection();
         return null;
     }
 

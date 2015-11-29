@@ -33,8 +33,9 @@ public class CityDB
         } catch (SQLException ex) {
             Logger.getLogger(CityDB.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
-            AviaDB.getInstance().closeConnection();
+           // AviaDB.getInstance().closeConnection();
         }
+        AviaDB.getInstance().closeConnection();
         return null;
     }
 
@@ -44,8 +45,9 @@ public class CityDB
         } catch (SQLException ex) {
             Logger.getLogger(CityDB.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
-            AviaDB.getInstance().closeConnection();
+           // AviaDB.getInstance().closeConnection();
         }
+        AviaDB.getInstance().closeConnection();
         return null;
     }
 
@@ -55,7 +57,7 @@ public class CityDB
         } catch (SQLException ex) {
             Logger.getLogger(CityDB.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
-            AviaDB.getInstance().closeConnection();
+           // AviaDB.getInstance().closeConnection();
         }
         return null;
     }

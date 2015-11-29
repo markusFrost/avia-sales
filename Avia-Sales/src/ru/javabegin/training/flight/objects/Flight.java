@@ -5,22 +5,24 @@ import ru.javabegin.training.flight.spr.objects.City;
 
 import java.util.Calendar;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Андрей
- * Date: 19.11.15
- * Time: 20:27
- * To change this template use File | Settings | File Templates.
- */
+
 public class Flight
 {
+    private long id;
     private String code;
-    private Calendar flightDate;
-    private Calendar flightTime;
+    private Calendar dateDepart;
+    private Calendar dateCome;
     private Aircraft aircraft;
-    private long duration;
-    private City cityTo;
     private City cityFrom;
+    private City cityTo;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getCode() {
         return code;
@@ -30,20 +32,20 @@ public class Flight
         this.code = code;
     }
 
-    public Calendar getFlightDate() {
-        return flightDate;
+    public Calendar getDateDepart() {
+        return dateDepart;
     }
 
-    public void setFlightDate(Calendar flightDate) {
-        this.flightDate = flightDate;
+    public void setDateDepart(Calendar dateDepart) {
+        this.dateDepart = dateDepart;
     }
 
-    public Calendar getFlightTime() {
-        return flightTime;
+    public Calendar getDateCome() {
+        return dateCome;
     }
 
-    public void setFlightTime(Calendar flightTime) {
-        this.flightTime = flightTime;
+    public void setDateCome(Calendar dateCome) {
+        this.dateCome = dateCome;
     }
 
     public Aircraft getAircraft() {
@@ -54,12 +56,12 @@ public class Flight
         this.aircraft = aircraft;
     }
 
-    public long getDuration() {
-        return duration;
+    public City getCityFrom() {
+        return cityFrom;
     }
 
-    public void setDuration(long duration) {
-        this.duration = duration;
+    public void setCityFrom(City cityFrom) {
+        this.cityFrom = cityFrom;
     }
 
     public City getCityTo() {
@@ -68,13 +70,5 @@ public class Flight
 
     public void setCityTo(City cityTo) {
         this.cityTo = cityTo;
-    }
-
-    public City getCityFrom() {
-        return cityFrom;
-    }
-
-    public void setCityFrom(City cityFrom) {
-        this.cityFrom = cityFrom;
     }
 }

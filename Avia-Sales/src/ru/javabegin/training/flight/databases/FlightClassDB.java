@@ -43,7 +43,7 @@ public class FlightClassDB
         {
             Logger.getLogger(FlightClassDB.class.getName()).log(Level.SEVERE, null, ex);
         }
-        AviaDB.getInstance().closeConnection();
+       // AviaDB.getInstance().closeConnection();
         return null;
     }
 

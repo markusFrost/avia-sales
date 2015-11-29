@@ -39,7 +39,7 @@ public class AircraftDB
         }catch ( Exception e ){}
         finally
         {
-             AviaDB.getInstance().closeConnection();
+             //AviaDB.getInstance().closeConnection();
         }
         return null;
     }

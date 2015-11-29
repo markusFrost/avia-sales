@@ -33,7 +33,7 @@ public class CompanyDB
         {
 
         }
-        AviaDB.getInstance().closeConnection();
+       // AviaDB.getInstance().closeConnection();
         return null;
     }
 
