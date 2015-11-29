@@ -77,6 +77,7 @@ public class CityDB
             e.printStackTrace();
         } finally {
             rs.close();
+            stmt.close();
         }
 
         return list;
@@ -99,6 +100,7 @@ public class CityDB
             e.printStackTrace();
         } finally {
             rs.close();
+            stmt.close();
         }
 
         return city;

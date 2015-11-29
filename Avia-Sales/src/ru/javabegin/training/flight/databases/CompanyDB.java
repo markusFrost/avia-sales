@@ -61,6 +61,7 @@ public class CompanyDB
              if ( rs != null )
              {
                  rs.close();
+                 stmt.close();
              }
         }
 

@@ -81,6 +81,7 @@ public class AircraftDB
             if ( rs != null )
             {
                 rs.close();
+                stmt.close();
             }
         }
 

@@ -72,6 +72,7 @@ public class FlightClassDB
             if ( rs != null && !rs.isClosed() )
             {
                 rs.close();
+                stmt.close();
             }
         }
 

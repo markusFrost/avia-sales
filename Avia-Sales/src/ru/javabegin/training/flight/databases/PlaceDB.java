@@ -86,6 +86,7 @@ public class PlaceDB
         } finally
         {
             rs.close();
+            stmt.close();
         }
 
         return list;
@@ -124,6 +125,7 @@ public class PlaceDB
             if (rs != null) {
                 try {
                     rs.close();
+                    stmt.close();
                 } catch (SQLException ex) {
                     Logger.getLogger(PlaceDB.class.getName()).log(Level.SEVERE, null, ex);
                 }
