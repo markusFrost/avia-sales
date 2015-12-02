@@ -2,6 +2,8 @@ package ru.javabegin.training.flight.databases;
 
 
 import ru.javabegin.training.flight.objects.Flight;
+import ru.javabegin.training.flight.spr.objects.City;
+import ru.javabegin.training.flight.utils.GMTCalendar;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,7 +14,10 @@ import java.util.Calendar;
 
 public class FlightDB
 {
-     private FlightDB(){}
+    public static final int INTERVAL = 1;
+
+
+    private FlightDB(){}
 
     private static FlightDB instance;
 
@@ -23,6 +28,17 @@ public class FlightDB
             instance = new FlightDB();
         }
         return instance;
+    }
+
+    public ArrayList<Flight> getFlights( long dateTime, City cityFrom, City cityTo)
+    {
+        try
+        {
+            Calendar c = GMTCalendar.getInstance();
+            c.setTimeInMillis(dateTime);
+        }
+        catch (Exception e){}
+        return null;
     }
 
     public ArrayList<Flight> getAllFlights()
@@ -145,5 +161,33 @@ public class FlightDB
         PreparedStatement stmt = conn.prepareStatement( sql );
         stmt.setLong(1, id);
         return stmt;
+    }
+
+    private PreparedStatement getFlightsStmt( Calendar dateTime, City cityFrom, City cityTo) throws SQLException
+    {
+        Connection conn = AviaDB.getInstance().getConnection();
+        String sql = "select * from flight where date_depart>=? and  date_depart<? and " +
+                " city_from_id=? and city_to_id=?";
+
+        PreparedStatement stmt = conn.prepareStatement(sql);
+
+        //  we do not need time = only date
+        dateTime.set(Calendar.HOUR_OF_DAY, 0);
+        dateTime.set(Calendar.MINUTE, 0);
+        dateTime.set(Calendar.SECOND, 0);
+        dateTime.set(Calendar.MILLISECOND, 0);
+
+        // interval of searching
+
+        Calendar dateTimeInterval = (Calendar) dateTime.clone();
+        dateTime.add(Calendar.DATE, INTERVAL );
+
+        stmt.setLong(1, dateTime.getTimeInMillis());
+        stmt.setLong(2, dateTimeInterval.getTimeInMillis());
+        stmt.setLong(3, cityFrom.getId());
+        stmt.setLong(4, cityTo.getId());
+
+        return stmt;
+
     }
 }
