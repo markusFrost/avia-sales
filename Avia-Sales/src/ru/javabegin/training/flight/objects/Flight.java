@@ -15,6 +15,15 @@ public class Flight
     private Aircraft aircraft;
     private City cityFrom;
     private City cityTo;
+    private String duration;
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
 
     public long getId() {
         return id;
