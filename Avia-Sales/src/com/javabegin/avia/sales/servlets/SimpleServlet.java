@@ -28,6 +28,8 @@ public class SimpleServlet extends HttpServlet {
 
         long date = 1328418000000L;
 
+        ArrayList<Flight> list = FlightDB.getInstance().getFlights( date, c3, c2 );
+
        String val =   "";
         response.getWriter().write( val );
 

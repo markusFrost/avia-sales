@@ -7,13 +7,13 @@
     <file path="/Dummy.txt" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449087620763" ignored="false" />
     <file path="/index.jsp" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447943266686" ignored="false" />
     <file path="/web.xml" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447943592905" ignored="false" />
-    <file path="/SimpleServlet.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448813472545" ignored="false" />
+    <file path="/SimpleServlet.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449089820644" ignored="false" />
     <file path="/Aircraft.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950005515" ignored="false" />
     <file path="/City.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447955041231" ignored="false" />
     <file path="/Country.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447958379456" ignored="false" />
     <file path="/Place.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627216779" ignored="false" />
     <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950213148" ignored="false" />
-    <file path="/Flight.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950682343" ignored="false" />
+    <file path="/Flight.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449089140831" ignored="false" />
     <file path="/Passenger.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950905411" ignored="false" />
     <file path="/Reservation.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447951100335" ignored="false" />
     <file path="/Buy.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447952679783" ignored="false" />
@@ -37,7 +37,7 @@
     <file path="$PROJECT_DIR$/localhost/apache-tomcat-7.0.65/webapps/docs/jndi-datasource-examples-howto.html" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448627196929" ignored="false" />
     <file path="/FlightClassDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448738198758" ignored="false" />
     <file path="/CompanyDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448643831663" ignored="false" />
-    <file path="/FlightDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448813339664" ignored="false" />
+    <file path="/FlightDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449090271295" ignored="false" />
     <file path="/GMTCalendar.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449087905672" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,19 +102,26 @@
       <file leaf-file-name="SimpleServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/javabegin/avia/sales/servlets/SimpleServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="21" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GMTCalendar.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/utils/GMTCalendar.java">
+      <file leaf-file-name="FlightDB.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="24" selection-start="114" selection-end="125" vertical-scroll-proportion="0.17391305">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="156" column="0" selection-start="4034" selection-end="4034" vertical-scroll-proportion="3.115942">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flight.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Flight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="33" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,15 +151,15 @@
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/DbHelper.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AviaDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Place.java" />
-        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Flight.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AircraftDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/CityDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/CompanyDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightClassDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PlaceDB.java" />
-        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightDB.java" />
-        <option value="$PROJECT_DIR$/src/com/javabegin/avia/sales/servlets/SimpleServlet.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/utils/GMTCalendar.java" />
+        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Flight.java" />
+        <option value="$PROJECT_DIR$/src/com/javabegin/avia/sales/servlets/SimpleServlet.java" />
+        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightDB.java" />
       </list>
     </option>
   </component>
@@ -257,6 +264,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AviaSales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Avia-Sales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AviaSales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Avia-Sales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -484,6 +535,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -552,7 +608,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.6703911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.6089386" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -646,13 +702,6 @@
         <state line="2" column="13" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="5" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.92156863">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/AviaDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="19" selection-start="1156" selection-end="1157" vertical-scroll-proportion="-0.13725491">
@@ -709,26 +758,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightDB.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/utils/GMTCalendar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="20" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="6" column="24" selection-start="114" selection-end="125" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javabegin/avia/sales/servlets/SimpleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="21" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
+        <state line="32" column="0" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/utils/GMTCalendar.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Flight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="24" selection-start="114" selection-end="125" vertical-scroll-proportion="0.17391305">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="19" column="33" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="0" selection-start="4034" selection-end="4034" vertical-scroll-proportion="3.115942">
+          <folding />
         </state>
       </provider>
     </entry>

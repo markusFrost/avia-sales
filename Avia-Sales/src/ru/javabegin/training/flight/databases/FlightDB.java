@@ -36,6 +36,7 @@ public class FlightDB
         {
             Calendar c = GMTCalendar.getInstance();
             c.setTimeInMillis(dateTime);
+            return getFlights(getFlightsStmt(c, cityFrom, cityTo ) );
         }
         catch (Exception e){}
         return null;
@@ -126,6 +127,10 @@ public class FlightDB
         return list;
     }
 
+    private static final String MIN = " мин.";
+    private static final String HOUR = " ч.  ";
+    private static final String DAY = " д.  ";
+
     private Flight fillFlight( ResultSet rs ) throws SQLException
     {
         Calendar dateDepart = Calendar.getInstance();
@@ -142,6 +147,29 @@ public class FlightDB
         flight.setAircraft(AircraftDB.getInstance().getAircraft(rs.getLong("aircraft_id")));
         flight.setCityFrom(CityDB.getInstance().getCity(rs.getLong("city_from_id")));
         flight.setCityTo(CityDB.getInstance().getCity(rs.getLong("city_to_id")));
+
+        StringBuilder sb = new StringBuilder();
+
+        int dayDiff = dateCome.get( Calendar.DAY_OF_YEAR) - dateDepart.get(Calendar.DAY_OF_YEAR);
+        int hourDiff = dateCome.get( Calendar.HOUR_OF_DAY) - dateDepart.get(Calendar.HOUR_OF_DAY);
+        int minDiff =  dateCome.get( Calendar.MINUTE) - dateDepart.get(Calendar.MINUTE);
+
+        if ( dayDiff > 0 )
+        {
+             sb.append(dayDiff).append(DAY);
+        }
+
+        if ( hourDiff > 0 )
+        {
+            sb.append(hourDiff).append(HOUR);
+        }
+
+        if ( minDiff > 0 )
+        {
+            sb.append(minDiff).append(MIN);
+        }
+
+        flight.setDuration( sb.toString() );
 
         return flight;
     }
@@ -180,7 +208,7 @@ public class FlightDB
         // interval of searching
 
         Calendar dateTimeInterval = (Calendar) dateTime.clone();
-        dateTime.add(Calendar.DATE, INTERVAL );
+        dateTimeInterval.add(Calendar.DATE, INTERVAL );
 
         stmt.setLong(1, dateTime.getTimeInMillis());
         stmt.setLong(2, dateTimeInterval.getTimeInMillis());
