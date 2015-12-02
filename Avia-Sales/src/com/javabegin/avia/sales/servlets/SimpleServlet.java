@@ -21,18 +21,16 @@ public class SimpleServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=windows-1251");
-        //response.getWriter().write("Привет!");
 
-        //ArrayList<Flight> list =   FlightDB.getInstance().getAllFlights();
+        City c1 = CityDB.getInstance().getCity(1);
+        City c2 = CityDB.getInstance().getCity(2);
+        City c3 = CityDB.getInstance().getCity(3);
 
-        //Flight item = FlightDB.getInstance().getFlight(1);
+        long date = 1328418000000L;
 
-        Aircraft item = AircraftDB.getInstance().getAircraft(1);
+       String val =   "";
+        response.getWriter().write( val );
 
         AviaDB.getInstance().closeConnection();
-
-       String val =   ""; ///"|" + item.getCompany().getName() + "|";
-        //val = list.get(0).getSeatLetter() + "";
-        response.getWriter().write( val );
     }
 }
