@@ -30,7 +30,7 @@ public class SimpleServlet extends HttpServlet {
 
        Place place = PlaceDB.getInstance().getPlace(2);
 
-        Passenger passenger = null; //get from DB
+        Passenger passenger = PassengerDB.getInstance().getPassenger(1); //get from DB
 
         Calendar date = Calendar.getInstance();
         date.setTimeInMillis(1328418000000L);

@@ -7,7 +7,7 @@
     <file path="/Dummy.txt" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449162026036" ignored="false" />
     <file path="/index.jsp" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447943266686" ignored="false" />
     <file path="/web.xml" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447943592905" ignored="false" />
-    <file path="/SimpleServlet.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449162810500" ignored="false" />
+    <file path="/SimpleServlet.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449163929224" ignored="false" />
     <file path="/Aircraft.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447950005515" ignored="false" />
     <file path="/City.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447955041231" ignored="false" />
     <file path="/Country.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1447958379456" ignored="false" />
@@ -39,7 +39,7 @@
     <file path="/CompanyDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1448643831663" ignored="false" />
     <file path="/FlightDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449090271295" ignored="false" />
     <file path="/GMTCalendar.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449087905672" ignored="false" />
-    <file path="/PassengerDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449163353565" ignored="false" />
+    <file path="/PassengerDB.java" changelist="0beb034c-d626-46af-921b-bb1bab0b0a7e" time="1449163888545" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,19 @@
       <file leaf-file-name="PassengerDB.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PassengerDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="30" selection-start="135" selection-end="146" vertical-scroll-proportion="0.26086956">
+            <state line="11" column="24" selection-start="268" selection-end="279" vertical-scroll-proportion="0.5365854">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#826#837#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javabegin/avia/sales/servlets/SimpleServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/City.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/Country.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/CountryDB.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/DbHelper.java" />
@@ -141,8 +152,9 @@
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/utils/GMTCalendar.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Flight.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/FlightDB.java" />
-        <option value="$PROJECT_DIR$/src/com/javabegin/avia/sales/servlets/SimpleServlet.java" />
+        <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Passenger.java" />
         <option value="$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PassengerDB.java" />
+        <option value="$PROJECT_DIR$/src/com/javabegin/avia/sales/servlets/SimpleServlet.java" />
       </list>
     </option>
   </component>
@@ -578,12 +590,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920736" sideWeight="0.21787709" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -595,7 +608,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -660,11 +672,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/interfaces/Check.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/spr/objects/City.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="37" selection-start="8" selection-end="37" vertical-scroll-proportion="0.0" />
@@ -759,17 +766,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/objects/Passenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="1346" selection-end="1346" vertical-scroll-proportion="2.057971">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javabegin/avia/sales/servlets/SimpleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="25" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.8271787">
+        <state line="34" column="0" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/javabegin/training/flight/databases/PassengerDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="135" selection-end="146" vertical-scroll-proportion="0.26086956">
-          <folding />
+        <state line="11" column="24" selection-start="268" selection-end="279" vertical-scroll-proportion="0.5365854">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#826#837#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
