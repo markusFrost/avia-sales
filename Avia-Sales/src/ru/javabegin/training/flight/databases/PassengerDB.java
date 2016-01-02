@@ -145,4 +145,20 @@ public class PassengerDB
         return stmt;
     }
 
+    private PreparedStatement getInsertPassengerStmt(Passenger passenger) throws SQLException
+    {
+        Connection conn = AviaDB.getInstance().getConnection();
+        String sql = "insert into passenger(given_name, middle_name, family_name, document_number, email, phone) values (?,?,?,?,?,?)";
+        PreparedStatement stmt = conn.prepareStatement(sql);
+
+        stmt.setString(1, passenger.getGivenName());
+        stmt.setString(2, passenger.getMiddleName());
+        stmt.setString(3, passenger.getFamilyName());
+        stmt.setString(4, passenger.getDocumentNumber());
+        stmt.setString(5, passenger.getEmail());
+        stmt.setString(6, passenger.getPhone());
+
+        return stmt;
+    }
+
 }
