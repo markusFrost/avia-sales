@@ -43,10 +43,12 @@ public class SimpleServlet extends HttpServlet {
         reserv.setPlace(place);
         reserv.setFlight(flight);
 
-        // insert into DB
+      //boolean fl =   ReservationDB.getInstance().insertReservation(reserv);
 
+        Reservation item = ReservationDB.getInstance().getReservation(1);
+        ArrayList<Reservation> listReservations = ReservationDB.getInstance().getAllReservations();
 
-       String val =   "";
+       String val =    "";
         response.getWriter().write( val );
 
         AviaDB.getInstance().closeConnection();

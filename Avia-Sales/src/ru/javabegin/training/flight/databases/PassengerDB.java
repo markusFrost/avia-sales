@@ -69,6 +69,17 @@ public class PassengerDB
         return null;
     }
 
+    public boolean insertPassenger(Passenger passenger)
+    {
+        try
+        {
+            return executeInsert(getInsertPassengerStmt(passenger));
+        }
+        catch (Exception e){}
+
+        return false;
+    }
+
     public ArrayList<Passenger> getAllPassengers()
     {
         try
@@ -112,6 +123,25 @@ public class PassengerDB
         }
 
         return passenger;
+    }
+
+    private boolean executeInsert(PreparedStatement stmt) throws SQLException {
+        try
+        {
+             int result = stmt.executeUpdate();
+            if ( result > 0)
+            {
+                return true;
+            }
+        }
+        finally
+        {
+            if (stmt != null)
+            {
+                stmt.close();
+            }
+        }
+        return false;
     }
 
     private Passenger fillPassenger(ResultSet rs) throws SQLException
